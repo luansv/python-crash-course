@@ -63,3 +63,4 @@ new_menu = ('cake', 'carrot', 'carrot cake') #to be a tuple it needs to have com
 print(f'New tuple')
 for new in new_menu:
     print(new)
+

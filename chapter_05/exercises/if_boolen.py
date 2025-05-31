@@ -24,3 +24,23 @@ if food1.lower() == food2.lower():
 else:
     print('The foods are not the same')
 
+# 5.3
+
+alien_color = ['green', 'yellow', 'red']
+if 'green' in alien_color:
+    print(f'Alien is green!')
+
+if 'red' in alien_color:
+    print(f'Alien is not red!')
+
+# 5.4
+
+if 'green' in alien_color:
+    print('You just earned 5 points!')
+elif 'yellow' in alien_color:
+    print('You just earned 10 points!')
+elif 'red' in alien_color:
+    print('You just earned 15 points!')
+
+# 5.7
+person = 2

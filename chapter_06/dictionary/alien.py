@@ -13,3 +13,7 @@ alien = {}
 alien['color'] = 'green'
 alien['points'] = 5
 print(alien)
+
+
+person = {'name': 'jane', 'age': 1}
+print(person['age'])

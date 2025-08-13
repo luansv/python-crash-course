@@ -34,3 +34,67 @@ glossary = {
 
 for word, meaning in glossary.items():
     print(f"{word}:\n  {meaning}\n")
+
+
+person = {'first': 'luan', 'last': 'silva', 'city': 'princesa', 'age': 10}
+print(f'Name: {person['first']}')
+print(f'City: {person['city']}')
+
+fav_numb = {
+    'Alice': 2,
+    'Babe': 3,
+    'Sofia': 5
+}
+
+for person, number in fav_numb.items():
+    print(f'O numero fav de {person} é {number}')
+
+
+
+abcd = {
+    'Love': 'Amor',
+    'Hi': 'Olá',
+    'Bonjour': 'Olá'
+}
+
+for name1, name2 in abcd.items():
+    print(f'A tradução de {name1}:\n {name2}')
+
+for name in abcd.keys():
+    print(f'Keys: {name}')
+
+for translation in abcd.values():
+    print(f'Values: {translation}')
+
+#6-5
+
+artists = {
+    'Charli': 'Brat',
+    'Arca': "Kick",
+    'Loona': 'Yves'
+}
+
+for name, album in artists.items():
+    print(f'{name} released {album}')
+
+for name in artists.keys():
+    print(f'Artists: {name}')
+
+for album in artists.values():
+    print(f'Albums: {album}')
+
+#6-6
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'rust',
+    'phil': 'python',
+}
+
+poll_takers = ['jen', 'sarah', 'mike', 'david', 'phil', 'emma']
+
+for person in poll_takers:
+    if person in favorite_languages:
+        print(f'Thanks {person.title()}, for responding')
+    else:
+        print(f"{person.title()}, please consider taking our favorite languages poll!")

@@ -98,3 +98,94 @@ for person in poll_takers:
         print(f'Thanks {person.title()}, for responding')
     else:
         print(f"{person.title()}, please consider taking our favorite languages poll!")
+
+
+print("---------------------------------")
+
+#6-7
+
+person1 = {'first_name': 'james', 'last_name': 'brooks', 'age': 19, 'city': 'toronto'}
+person2= {'first_name': 'carla', 'last_name': 'brooks', 'age': 19, 'city': 'toronto'}
+
+people = [person1, person2]
+
+for person in people:
+    print(f"F name: {person['first_name']}")
+    print(f"Last name: {person['last_name']}")
+    print(f"Age: {person['age']}")
+    print(f"City: {person['city']}")
+
+print("---------------------------------")
+
+#6-8
+pet_1 = {
+    'kind': 'dog',
+    'owner': 'Alice'
+}
+
+pet_2 = {
+    'kind': 'cat',
+    'owner': 'Bob'
+}
+
+pet_3 = {
+    'kind': 'parrot',
+    'owner': 'Clara'
+}
+
+pet_4 = {
+    'kind': 'turtle',
+    'owner': 'David'
+}
+
+animals = [pet_1, pet_2, pet_3, pet_4]
+
+for pet in animals:
+    print(f"Kind of animal: {pet['kind']}")
+    print(f"Owner's name: {pet['owner']}")
+    print("-" * 20)
+
+print("---------------------------------")
+
+#6-9
+
+favorite_places = {
+    'Alice': ['Paris', 'Tokyo', 'New York'],
+    'Bob': ['London', 'Rome'],
+    'Clara': ['Sydney']
+}
+
+for person, places in favorite_places.items():
+    print(f'{person} favorite places are: ')
+    for place in places:
+        print(f"- {place}")
+    print()
+
+print("---------------------------------")
+
+#6-10
+cities = {
+    'Paris': {
+        'country': 'France',
+        'population': '2.1 million',
+        'fact': 'Home to the Eiffel Tower and famous for its art and cuisine.'
+    },
+    'Tokyo': {
+        'country': 'Japan',
+        'population': '14 million',
+        'fact': 'Known for its cherry blossoms and bustling Shibuya Crossing.'
+    },
+    'Rio de Janeiro': {
+        'country': 'Brazil',
+        'population': '6.7 million',
+        'fact': 'Famous for its Carnival festival and the Christ the Redeemer statue.'
+    }
+}
+
+for city, infos in cities.items():
+    print(f'City: {city}')
+    for key, value in infos.items():
+        print(f"{key}: {value}")
+
+    print()
+

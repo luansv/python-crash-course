@@ -41,3 +41,28 @@ for name, langs in favorite_languages.items():
     for lang in langs:
         print(f'\t{lang.title()}')
 
+
+print('-----------------------')
+
+users = {
+ 'aeinstein': {
+ 'first': 'albert',
+ 'last': 'einstein',
+ 'location': 'princeton',
+ },
+
+ 'mcurie': {
+ 'first': 'marie',
+ 'last': 'curie',
+ 'location': 'paris',
+ },
+
+ }
+
+for person, person_info in users.items():
+    print(f"Person: {person}")
+    full_name = f"{person_info['first']} {person_info['last']}"
+    location = f'{person_info['location']}'
+
+    print(f'Fullname: {full_name}')
+    print(f'Location: {location}')

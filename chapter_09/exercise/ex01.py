@@ -1,5 +1,3 @@
-from pydoc import describe
-from socket import send_fds
 
 
 class Restaurant:
